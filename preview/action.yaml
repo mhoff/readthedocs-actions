@@ -36,13 +36,13 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # https://github.com/actions/checkout/releases/tag/v3.6.0
       with:
         repository: "readthedocs/actions"
         ref: "v1"
 
     - name: "Comment on Pull Request with Read the Docs' preview links"
-      uses: actions/github-script@v6
+      uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # https://github.com/actions/github-script/releases/tag/v6.4.1
       with:
         script: |
           const inputs = {
